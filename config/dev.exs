@@ -70,7 +70,6 @@ config :connectrix, ConnectrixWeb.Endpoint,
     signing_salt: "1KPdZOuIFd0txHT3y65T+aJ0xaagKazX"
   ]
 
-
 # Do not include metadata nor timestamps in development logs
 config :logger, :console, format: "[$level] $message\n"
 

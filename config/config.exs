@@ -15,7 +15,8 @@ config :connectrix, ConnectrixWeb.Endpoint,
   url: [host: "localhost"],
   render_errors: [view: ConnectrixWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Connectrix.PubSub,
-  live_view: [signing_salt: "gGL1SjRy"]
+  live_view: [signing_salt: "gGL1SjRy"],
+  secret_key_base: "#{System.get_env("ENDPOINT_SECRET")}"
 
 # Configures the mailer
 #
