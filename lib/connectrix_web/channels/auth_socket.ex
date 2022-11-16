@@ -3,7 +3,7 @@ defmodule ConnectrixWeb.AuthSocket do
   require Logger
 
   channel "ping", ConnectrixWeb.PingChannel
-  channel "tracked", ConnectrixWeb.TrackedChannel
+  channel "register:*", ConnectrixWeb.RegisterChannel
 
   @one_day 86400
 
