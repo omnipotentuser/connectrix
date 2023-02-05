@@ -1,0 +1,13 @@
+*
+!/assets
+!/config
+!/lib
+!/priv
+!/rel
+!/mix.*
+!/.iex.exs
+
+#ignore dev & test files
+config/dev.exs
+config/test.exs
+config/*.local.exs
